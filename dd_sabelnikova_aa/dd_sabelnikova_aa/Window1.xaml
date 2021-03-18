@@ -1,0 +1,22 @@
+﻿<Window x:Class="dd_sabelnikova_aa.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dd_sabelnikova_aa"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <DataGrid Margin="0,1,172,0" x:Name="dtGrid" ItemsSource="{Binding}"/>
+        <Button Content="Удалить" HorizontalAlignment="Left" Height="33" Margin="626,355,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click_1"/>
+        <Button Content="Добавить" HorizontalAlignment="Left" Height="33" Margin="625,191,0,0" VerticalAlignment="Top" Width="156" Click="Button_Click"/>
+        <TextBox x:Name="con_number_box" HorizontalAlignment="Left" Height="23" Margin="626,32,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="con_data_sig_box" HorizontalAlignment="Left" Height="23" Margin="626,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156"/>
+        <TextBox x:Name="con_name_box" HorizontalAlignment="Left" Height="23" Margin="626,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156"/>
+        <Label Content="Номер договора&#xA;" HorizontalAlignment="Left" Margin="626,1,0,0" VerticalAlignment="Top"/>
+        <Label Content="Дата подписания" HorizontalAlignment="Left" Margin="626,60,0,0" VerticalAlignment="Top"/>
+        <Label Content="Название" HorizontalAlignment="Left" Margin="626,119,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.495,0.495"/>
+        <TextBox x:Name="deleteID1_box" HorizontalAlignment="Left" Height="23" Margin="626,314,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="156"/>
+        <Label Content="Id удаляемого элемента" HorizontalAlignment="Left" Margin="626,283,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.495,0.495"/>
+    </Grid>
+</Window>
